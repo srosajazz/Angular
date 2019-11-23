@@ -5,5 +5,7 @@ import { Component } from "@angular/core";
   templateUrl: "./app.component.html"
 })
 export class AppComponent {
-  title = "sergio-academy";
+  Nick = { name: "Nick", IsJedi: false, template: "Bass" };
+  Mark = { name: "Mark", IsJedi: false };
+  Mary = { name: "Mary", IsJedi: true, template: "Guitar" };
 }

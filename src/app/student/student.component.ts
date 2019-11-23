@@ -1,5 +1,5 @@
-import { Component, OnInit } from "@angular/core";
-
+import { Component, OnInit, Input } from "@angular/core";
+import { Student } from "./student.model";
 @Component({
   selector: "sr-student",
   templateUrl: "./student.component.html",
@@ -7,8 +7,8 @@ import { Component, OnInit } from "@angular/core";
 })
 export class StudentComponent implements OnInit {
   //property Binding
-  name: string = "Sergio";
-  isJedi: boolean = true;
+  @Input()
+  student: Student;
 
   constructor() {}
 
